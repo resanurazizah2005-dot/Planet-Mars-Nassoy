@@ -1,0 +1,678 @@
+06.19 23.17
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#ffd1e8,#ffe8f5,#fff);
+
+overflow:hidden;
+
+}
+
+/* HATI */
+
+.hearts{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+overflow:hidden;
+
+pointer-events:none;
+
+}
+
+.hearts span{
+
+position:absolute;
+
+bottom:20px;
+
+color:#ff5b9d;
+
+font-size:20px;
+
+animation:love linear infinite;
+
+}
+
+@keyframes love{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* COVER */
+
+.cover{
+
+width:100%;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:20px;
+
+position:relative;
+
+}
+
+.cover img{
+
+width:200px;
+
+height:200px;
+
+border-radius:50%;
+
+border:6px solid white;
+
+object-fit:cover;
+
+box-shadow:0 0 30px rgba(255,0,128,.3);
+
+animation:zoom 4s infinite alternate;
+
+}
+
+@keyframes zoom{
+
+from{
+
+transform:scale(1);
+
+}
+
+to{
+
+transform:scale(1.05);
+
+}
+
+}
+
+h1{
+
+font-family:'Great Vibes';
+
+font-size:50px;
+
+color:#ff3f8d;
+
+margin-top:20px;
+
+}
+
+h2{
+
+margin-top:10px;
+
+font-size:25px;
+
+color:#444;
+
+}
+
+.subtitle{
+
+margin-top:30px;
+
+font-size:18px;
+
+color:#555;
+
+line-height:1.8;
+
+max-width:700px;
+
+}
+
+button{
+
+margin-top:40px;
+
+padding:16px 40px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:50px;
+
+background:#ff4f96;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:0 10px 25px rgba(255,0,128,.3);
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+.from{
+
+margin-top:25px;
+
+font-size:18px;
+
+color:#ff4f96;
+
+font-weight:bold;
+
+}
+
+audio{
+
+display:none;
+
+}
+
+.slide{
+
+display:none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<audio id="musik" loop>
+
+<source src="lagu.mp3" type="audio/mpeg">
+
+</audio>
+
+<div class="hearts"></div>
+
+<section class="cover" id="slide1">
+
+<img src="cover.jpg">
+
+<h1>Happy Birthday</h1>
+
+<h2>Nasa Mahardika Bariya Putra ❤️</h2>
+
+<p class="subtitle">
+
+Ada sesuatu yang sudah aku siapkan khusus untukmu. Semoga setelah membukanya kamu bisa tersenyum. 🤍
+
+</p>
+
+<button onclick="nextSlide()">
+
+ Buka Hadiah
+
+</button>
+
+<p class="from">
+
+Dari Ressay Cantiks ❤️
+
+</p>
+
+</section>
+
+<div id="slide2" class="slide">
+
+<div class="card">
+
+<h1 class="judul">
+
+Untuk Nassoy ❤️
+
+</h1>
+
+<p id="typing"></p>
+
+<div class="btn-area">
+
+<button onclick="slide3()">
+
+Lanjut ➜
+</button>
+</div>
+</div>
+</div>
+<style>
+.slide{
+width:100%;
+height:100vh;
+display:none;
+justify-content:center;
+align-items:center;
+padding:25px;
+background:linear-gradient(180deg,#ffe4f2,#fff);
+animation:fade 1s;
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateX(40px);
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+max-width:800px;
+
+width:100%;
+
+text-align:center;
+
+}
+
+.judul{
+
+font-family:'Great Vibes';
+
+font-size:40px;
+
+color:#ff4d94;
+
+margin-bottom:30px;
+
+}
+
+#typing{
+font-size:15px;
+line-height:1,5;
+left: ;
+white-space:pre-line;
+min-height:320px;
+}
+.btn-area{
+margin-top:10px;
+}
+</style>
+<div id="slide3" class="slide">
+<div class="card">
+<h1 class="judul">
+Kenangan Kita 
+</h1>
+<div class="collage">
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto5.jpg">
+</div>
+<p style="margin-top:10px">
+ Semoga foto" ini bisa mengingatkan semua momen yang pernah kita lewati bersama ❤️
+</p>
+<div class="btn-area">
+<button onclick="slide4()">
+Lanjut ➜
+</button>
+</div>
+</div>
+</div>
+<style>
+.collage{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:10px;
+}
+.collage img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+.collage img:last-child{
+grid-column:span 2;
+height:220px;
+
+}
+
+.collage img:hover{
+
+transform:scale(1.05);
+
+}
+
+</style>
+
+<script>
+
+const text=`
+
+Selamat ulang tahun Nasa Mahardika Bariya Putra. Semoga sehat selalu, bahagia terus, dimudahkan segala urusannya, dan semoga impiannya segera tercapai. Aamiin.
+
+Terima kasih sudah menjadi bagian yang begitu berarti dalam hidupku. Aku berharap kita terus berproses bersama-sama, saling menjaga, saling memahami, dan semoga harapanku tidak ada lagi kata perpisahan.
+
+With Love,
+Ressay Cantiks ❤️
+`;
+let i=0;
+function ketik(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(ketik,35);
+}
+}
+function nextSlide(){
+document.getElementById("slide1").style.display="none";
+
+document.getElementById("slide2").style.display="flex";
+
+document.getElementById("musik").play();
+
+ketik();
+
+}
+
+function slide3(){
+
+document.getElementById("slide2").style.display="none";
+
+document.getElementById("slide3").style.display="flex";
+
+}
+
+</script>
+<div id="slide4" class="slide">
+
+<div class="card">
+
+<h1 class="judul">Untukmu ❤️</h1>
+
+<p style="font-size:20px;line-height:1,5">
+
+Kalau suatu hari nanti kamu bertanya, apa harapan terbesarku.
+
+Jawabanku tetap sama..
+
+Aku ingin melihatmu bahagia. Aku ingin melihatmu tersenyum setiap hari. Dan kalau Tuhan mengizinkan, aku ingin menjadi salah satu alasan di balik senyuman itu. Terima kasih sudah hadir dan memberi warna di hidupku.
+
+</p>
+
+<div class="btn-area">
+
+<button onclick="slide5()">
+
+Lanjut ➜
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div id="slide5" class="slide">
+
+<div class="card">
+
+<h1 class="judul">Pantun Buat Kamu </h1>
+
+<p style="font-size:20px;line-height:1,5">
+
+Jalan-jalan membeli roti,
+Rotinya hangat rasanya enak.
+Selamat ulang tahun orang tersayang di hati,
+Semoga sehat dan rezekinya makin banyak❤️
+
+</p>
+
+<div class="btn-area">
+
+<button onclick="slide6()">
+
+Lanjut ➜
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div id="slide6" class="slide">
+
+<div class="card">
+
+<h1 class="judul">Maaf Ya... 🥺</h1>
+
+<p style="font-size:20px;line-height:1,5">
+
+Maaf kalau selama ini aku masih banyak kurangnya.
+
+Maaf kalau kadang aku membuatmu kecewa.
+
+Dan maaf juga karena tahun ini
+
+aku belum bisa merayakan ulang tahunmu secara langsung.
+
+Tapi percayala, doa dan rasa sayangku selalu menyertaimu.
+
+Semoga suatu hari nanti kita bisa merayakannya bersama
+
+❤️
+
+</p>
+
+<div class="btn-area">
+
+<button onclick="slide7()">
+
+Lanjut ➜
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div id="slide7" class="slide">
+
+<div class="card">
+
+<h1 class="judul">
+
+Happy Birthday ❤️
+
+</h1>
+
+<h2>
+
+Nasa Mahardika Bariya Putra
+
+</h2>
+
+<br>
+
+<p style="font-size:22px;line-height:1,5">
+
+Terima kasih sudah membuka hadiah kecil ini.
+
+Semoga kamu menyukainya.
+
+Tetap jadi alasan bahagiaku ya.
+
+I Love You More 🫦
+
+</p>
+
+<br>
+
+<h3>
+
+With Love
+
+<br>
+
+Ressay Cantiks ❤️
+
+</h3>
+
+<br>
+
+<button onclick="location.reload()">
+
+ Replay
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<script>
+
+function slide4(){
+
+document.getElementById("slide3").style.display="none";
+
+document.getElementById("slide4").style.display="flex";
+
+}
+
+
+
+function slide5(){
+
+document.getElementById("slide4").style.display="none";
+
+document.getElementById("slide5").style.display="flex";
+
+}
+
+
+
+function slide6(){
+
+document.getElementById("slide5").style.display="none";
+
+document.getElementById("slide6").style.display="flex";
+
+}
+
+
+
+function slide7(){
+
+document.getElementById("slide6").style.display="none";
+
+document.getElementById("slide7").style.display="flex";
+
+}
+
+
+
+// Animasi hati
+
+const hearts=document.querySelector(".hearts");
+
+for(let i=0;i<40;i++){
+
+let h=document.createElement("span");
+
+h.innerHTML="❤";
+
+h.style.left=Math.random()*100+"%";
+
+h.style.animationDuration=(4+Math.random()*6)+"s";
+
+h.style.fontSize=(15+Math.random()*25)+"px";
+
+hearts.appendChild(h);
+
+}
+
+</script>
+
+</body>
+
+</html>
+
